@@ -259,11 +259,3 @@ The most valuable insight from building this: the best agents are not the ones w
 - Multi-user support with separate plan files per session
 - Integration with Google Calendar to schedule planned tasks automatically
 
----
-
-## 👤 Author
-
-**Ajay** — IIT Bombay, Chemical Engineering  
-Summer of Science 2026 · Generative and Agentic AI  
-Mentor: Naman Tunwal  
-GitHub: [@ajay-019](https://github.com/ajay-019)
