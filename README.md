@@ -1,10 +1,10 @@
-# 🧭 Planner Agent
+# Planner Agent
 
 An autonomous AI agent that takes one big goal, breaks it into ordered steps, executes them one by one using live web search, and saves its entire state to disk — so if you shut it down halfway through and come back tomorrow, it picks up exactly where it stopped.
 
 ---
 
-## 📌 The Problem
+## The Problem
 
 You set a big goal. Life happens. You lose track. You come back and have no idea where you left off. So you start over.
 
@@ -12,7 +12,7 @@ Normal AI chatbots forget everything the moment you close them. There is no stru
 
 ---
 
-## 💡 The Solution
+## The Solution
 
 The Planner Agent fixes this with one core idea: **the file is the brain, not the program.**
 
@@ -20,7 +20,7 @@ You give it a goal. It breaks that goal into 4–6 ordered steps and writes them
 
 ---
 
-## 🧠 Architecture
+## Architecture
 
 ```
                     ┌──────────────────────────────────┐
@@ -48,7 +48,7 @@ Because state is flushed to disk after every step, a crash, a rate-limit, or Ctr
 
 ---
 
-## 🏗️ The Four Organs
+## The Four Organs
 
 This project is the capstone of a structured AI/ML program. Each week added one capability:
 
@@ -62,7 +62,7 @@ This project is the capstone of a structured AI/ML program. Each week added one 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 capstone/
@@ -95,7 +95,7 @@ Facts the agent learns during execution are saved to `memory.json` via the `reme
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
@@ -107,7 +107,7 @@ Facts the agent learns during execution are saved to `memory.json` via the `reme
 
 ---
 
-## 🚀 Setup and Running
+## Setup and Running
 
 ### 1. Clone the repo
 ```bash
@@ -148,7 +148,7 @@ streamlit run app.py
 
 ---
 
-## 🖥️ Example Run
+## Example Run
 
 ```
 ==================================================
@@ -192,7 +192,7 @@ All steps complete.
 
 ---
 
-## 📊 plan.json Schema
+## plan.json Schema
 
 ```json
 {
@@ -224,7 +224,7 @@ All steps complete.
 
 ---
 
-## ✅ Features
+## Features
 
 - **Autonomous task decomposition** — one goal becomes an ordered step list automatically
 - **Live web search** — steps fetch real information from the web, not cached model knowledge
@@ -237,7 +237,7 @@ All steps complete.
 
 ---
 
-## 🔒 Security
+## Security
 
 - API key lives in `.env` only — never hardcoded
 - `.env` is in `.gitignore` — never committed
@@ -245,13 +245,13 @@ All steps complete.
 
 ---
 
-## 📈 What I Learned
+## What I Learned
 
 The most valuable insight from building this: the best agents are not the ones with the biggest models. They are the ones that manage state well. When the agent's memory lives on disk instead of in RAM, it stops being a demo and starts being something you can actually rely on.
 
 ---
 
-## 🔭 Future Extensions
+## Future Extensions
 
 - Email or WhatsApp notification when a long plan completes
 - Parallel step execution for independent tasks
